@@ -1,0 +1,57 @@
+para importar o numpy
+> import numpy as np
+
+np.array([])
+
+a.ndim
+
+arr = np.array([1, 2, 3, 4], ndmin=5)
+> 5 dimensões
+
+arr[0, 1]
+> acessa o segundo elemento do primeiro array
+
+arr[1:5:2]
+> fatiamento
+
+arr[1:5 ,1:5:2] > pegas as linhas 1,2,3,4
+> fatiamento
+
+np.shape(a)
+> estrutura completa
+
+a = a.reshape((túpla))
+> refaz a estrutura do shape
+
+for i in np.diter(a): print i
+
+np.stack((a, b), axis=1)
+> empilha em matrizes, mt legal de mecher
+> arr1 = np.array([1, 2, 3])
+> arr2 = np.array([4, 5, 6, 6, 6])
+> arr3 = np.array([[7, 8, 9], [9,9,9]])
+> arr = np.stack((arr2[arr2 == 6], arr3[1], arr1, arr1), axis=1)
+
+> np.vstack(vertical)  == np.stack((xx), axis=1)
+> np.hstack(vertical)  == np.concatenate((xx))
+
+
+np.array_split(arr, em quantas partes será dividido)
+> Divide o array em várias partes
+
+np.where(arr == 4)
+> retorna os indices de onde tem 4 no array
+
+np.searchsorted(a, 7)
+> diz onde deve ser inserido o elemento um elemento em um array de forma crescente
+
+np.sort(arr)
+> Ordena um array
+> Ordena cada dimensão de um array de forma singular
+
+> Filtrando um array
+a = np.random.randint(1,100, size=(20))
+arr = a > 50
+a[arr] # daqui sairá todos os valores maiores que 50
+> Forma alternativa:
+print(a[a > 50])

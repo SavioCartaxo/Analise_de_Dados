@@ -1,0 +1,27 @@
+------------------------------------------------------
+                Jogo da Temperatura
+------------------------------------------------------
+
+Este programa simula a evolução de uma matriz de temperaturas ao
+longo do tempo, utilizando regras simples de vizinhança para modificar
+a temperatura de cada célula. A cada iteração, a temperatura de cada
+célula é alterada com base na média das temperaturas dos seus vizinhos
+(células adjacentes). O processo é repetido até que a matriz atinja um
+estado de equilíbrio, onde as temperaturas não mudam mais entre as gerações.
+
+Regras do Jogo:
+
+1. Cada célula da matriz representa uma temperatura, com valores
+   numéricos que podem ser modificados.
+2. A temperatura de cada célula é recalculada com base na média das
+   temperaturas das células vizinhas, sendo que as células vizinhas são
+   aquelas que estão diretamente ao redor da célula (acima, abaixo, à
+   esquerda e à direita, incluindo as diagonais).
+3. Se uma célula possui valor 0, ela não contribui para o cálculo da
+   média, ou seja, ela é considerada como uma célula "morta".
+4. O programa continuará executando até que a matriz atinja um estado de
+   equilíbrio, ou seja, até que as temperaturas das células não mudem
+   mais entre as gerações.
+
+A matriz inicial será gerada aleatoriamente com valores numéricos
+entre 1 e 100, e as células com valor 0 serão consideradas "mortas".
